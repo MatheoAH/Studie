@@ -1,3 +1,4 @@
+package Øving1;
 public class Oppgave2 {
     public static void main(String[] args){
        double timer = 5;

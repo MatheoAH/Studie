@@ -1,3 +1,4 @@
+package Øving1;
 import java.util.Scanner;
 public class Oppgave3 {
     
