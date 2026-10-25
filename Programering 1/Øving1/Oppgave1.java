@@ -1,4 +1,4 @@
-package Øving1;
+
 public class Oppgave1 {
     public static void main(String[] args) {
         double tommer = 10;

@@ -18,5 +18,6 @@ public class TekstanalyseTest {
             tekstanalyse.MestVanlig();
 
         }
+        scanner.close();
     }
 }
