@@ -1,6 +1,4 @@
-/**
- * Immutabel klasse: attributtene settes i konstruktøren og kan aldri endres.
- */
+
 public final class Person {
     private final String fornavn;
     private final String etternavn;
