@@ -1,0 +1,1 @@
+Hele oppgaven burde inneholde tre klasser, en for hver eindom, en for et eiendomsregister og en for UI

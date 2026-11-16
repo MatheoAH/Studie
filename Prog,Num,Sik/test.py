@@ -1,34 +1,23 @@
 import numpy as np
+w = lambda z: z**2*(4-z)
+y = []
+N = 4
 
-# last inn dataen
-datoer = np.genfromtxt("dato.csv",delimiter=",",dtype="U20")
-x = np.loadtxt("KPI.csv",delimiter=",")
+start = 0
+slutt = 3
 
-# vi lager en dictionary, vår nøklene er år/måned og verdiene er KPI
-KPI = dict(zip(datoer,x))
+h = (slutt-start)/N
 
+for i in range(N+1):
+    y.append(w(h*i))
 
-# nå vil KPI["år måned"] gi KPI for den oppgitte datoen, f eks 
-# print(KPI["1932 Jan"])
+print(0.45*8**(-1/4))
 
-# enkelte måneder har ikke fått KPI ennå
-# print(KPI["2025 Des"])
+g = lambda V: 5-V-10**-6*(np.e**(V/0.05)-1)
+gd = lambda V: -1/50000*np.e**(20*V)-1
 
-# eksempel: vi beregner forlengs differanser
-y = np.diff(x)
-# svaret legges i en dictionary. 
-Prisvekst_f = dict(zip(datoer, np.hstack((y,np.nan))))
+V = 0.76477822375478
 
-# Her prisvekst med baklengs differanser
+print(V-g(V)/gd(V))
 
-Prisvekst_b = dict() # fullfør svaret
-
-# Her prisvekst med sentrale differanser
-Prisvekst_s = dict() # fullfør svaret
-
-# Her den andre deriverte
-Prisvekstvekst = dict() # fullfør svaret
-
-# Trend i prisvekst (synkende/økende/stabil)
-Trend = dict() # fullfør svaret
-        
+vk = np.zeros(3
