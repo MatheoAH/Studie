@@ -1,7 +1,7 @@
 package Øving7;
 
 public class NyString {
-    private String tekst;
+    private final String tekst;
 
 
     public NyString(String tekst) {
